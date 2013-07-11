@@ -1,3 +1,10 @@
+Bryan's Alteration
+==================================
+
+This is a fork of the original watchface. This watchface is exactly the same except it removes the "seconds" which should save the battery life of the watch some.
+
+Original readme below:
+
 Frenchy Fuzzy watchface for Pebble
 ==================================
 
