@@ -10,10 +10,10 @@
 
 #include "french_time.h"
 
-#define MY_UUID { 0xAE, 0x9D, 0x29, 0xE1, 0x55, 0x17, 0x47, 0x8D, 0xAB, 0x43, 0x79, 0xE7, 0xAA, 0x08, 0x9E, 0x8F }
+#define MY_UUID { 0xAE, 0x9D, 0x29, 0xE1, 0x55, 0x17, 0x47, 0x8D, 0xAB, 0x43, 0x79, 0xE7, 0xAA, 0x08, 0x9E, 0xBD }
 PBL_APP_INFO(MY_UUID,
-             "Fuzzy French +", "pitoo.com",
-             1, 3, /* App version */
+             "Fuzzy French + mandlar", "bryandenny.com",
+             1, 0, /* App version */
              RESOURCE_ID_IMAGE_MENU_ICON,
              APP_INFO_WATCH_FACE);
 #define ANIMATION_DURATION 800
@@ -245,7 +245,7 @@ void pbl_main(void *params) {
     // Handle time updates
     .tick_info = {
       .tick_handler = &handle_minute_tick,
-      .tick_units = SECOND_UNIT
+      .tick_units = MINUTE_UNIT
     }
 
   };
