@@ -179,7 +179,7 @@ void info_lines(PblTm* t, char* line1, char* line2) {
   strcat(line1, " ");
   strcat(line1, mon);
 
-  string_format_time(line2, LINE_BUFFER_SIZE, "s-%W • j-%j • %H%M%S", t);
+  string_format_time(line2, LINE_BUFFER_SIZE, "s-%W • j-%j • %H%M", t);
 
 }
 
