@@ -141,9 +141,9 @@ void update_watch(PblTm* t) {
   // update min2 only if changed happens on
   if(strcmp(new_time.line3, cur_time.line3) != 0) updateLayer(&line3, 3);
 
-  // vibrate at o'clock from 9 to 18
-  if(t->tm_min == 0 && t->tm_sec == 0 && t->tm_hour >= 9 && t->tm_hour <= 18 ) vibes_double_pulse();
-  if(t->tm_min == 59 && t->tm_sec == 57 && t->tm_hour >= 8 && t->tm_hour <= 17 ) vibes_short_pulse();
+  // vibrate at o'clock from 8 to 24
+  if(t->tm_min == 0 && t->tm_sec == 0 && t->tm_hour >= 8 && t->tm_hour <= 24 ) vibes_double_pulse();
+  if(t->tm_min == 59 && t->tm_sec == 57 && t->tm_hour >= 7 && t->tm_hour <= 23 ) vibes_short_pulse();
 }
 
 // Handle the start-up of the app
