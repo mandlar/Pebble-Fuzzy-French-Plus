@@ -1,7 +1,7 @@
 Bryan's Alteration
 ==================================
 
-This is a fork of the original watchface. This watchface is exactly the same except it removes the "seconds" which should save the battery life of the watch some.
+This is a fork of the original watchface. This watchface is exactly the same except it removes the "seconds" which should save the battery life of the watch some. The watch will also vibrate at the top of every hour from 8am until midnight.
 
 Original readme below:
 
