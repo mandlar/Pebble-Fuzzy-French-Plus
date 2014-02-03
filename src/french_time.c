@@ -59,7 +59,7 @@ static const char* const MOIS[] = {
 
 
 
-void fuzzy_time(PblTm* t, char* line1, char* line2, char* line3) {
+void fuzzy_time(struct tm* t, char* line1, char* line2, char* line3) {
 
   int hours = t->tm_hour;
   int minutes = t->tm_min;
@@ -160,7 +160,7 @@ void fuzzy_time(PblTm* t, char* line1, char* line2, char* line3) {
 
 }
 
-void info_lines(PblTm* t, char* line1, char* line2) {
+void info_lines(struct tm* t, char* line1, char* line2) {
 
   char wday[LINE_BUFFER_SIZE];
   char mday[LINE_BUFFER_SIZE];
@@ -179,7 +179,7 @@ void info_lines(PblTm* t, char* line1, char* line2) {
   strcat(line1, " ");
   strcat(line1, mon);
 
-  string_format_time(line2, LINE_BUFFER_SIZE, "s-%W • j-%j • %H%M", t);
+  strftime(line2, LINE_BUFFER_SIZE, "s-%W • j-%j • %H%M", t);
 
 }
 
